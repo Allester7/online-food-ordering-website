@@ -1,0 +1,23 @@
+@import "tailwindcss";
+body{
+    font-family: sans-serif;
+}
+.max-width{
+    max-width: 80%;
+}
+.image-height{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.resturant-hover:hover{
+    display: flex;
+    max-width: 200px;
+    width: 200px;
+    height: 200px;
+}
+.resturant-hover>div>img:hover{
+    width:230px
+}
