@@ -36,7 +36,8 @@ const [listOfResturants, setListOfResturants] = useState([]);
         </div>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> */}
+      <div className="flex flex-wrap max-w-[100%] items-center justify-center gap-4 h-3/12">
       {filteredList.length === 0 ? (
             <Shimmer />
           ):

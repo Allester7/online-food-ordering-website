@@ -2,7 +2,7 @@ import { CDN_URL } from "../utils/constants";
 const ResturantCard = (props) =>{
     const{cloudinaryImageId,name, avgRating, sla, cuisines, costForTwo} = props.resData;
     return(
-        <div className="bg-[#fdfbd4] rounded-lg shadow-lg p-4 transition transform hover:scale-95 duration-300 flex flex-col justify-between h-full">
+        <div className="bg-[#fdfbd4] rounded-lg shadow-lg p-4 transition transform hover:scale-95 duration-300 flex flex-col justify-between h-full min-h-[350px] w-3/12">
             <div className=" px-2 pt-2">
                 <img src={CDN_URL+cloudinaryImageId} alt="food" className="w-full h-40 object-cover rounded-t-lg"/>
             </div>
