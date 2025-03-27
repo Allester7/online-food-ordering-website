@@ -7,6 +7,7 @@ import About from "../src/component/About.jsx";
 import Cart from "../src/component/Cart.jsx"
 import Contact from "../src/component/Contact.jsx"
 import ResturantList from './component/ResturantList.jsx';
+import ResturantItems from './component/ResturantItems.jsx';
 
 
 const appLayout = createBrowserRouter([
@@ -29,6 +30,10 @@ const appLayout = createBrowserRouter([
       {
         path:"/Contact",
         element:<Contact />
+      },
+      {
+        path:"/resturant/:resId",
+        element:<ResturantItems />
       }
     ],
     errorElement: <h1>404 not Found</h1>
